@@ -17,12 +17,14 @@ You can add other dependencies to your project
 from the command line, enter the following
 - `python3 -m venv venv`
 - `source venv/bin/activate`
+- `pip install -r req.txt`
 - `python entry.py`
 
 #HOW TO START THE APP USING GUNICORN SERVER
 from the command line, enter the following
 - `python3 -m venv venv`
 - `source venv/bin/activate`
+- `pip install -r req.txt`
 - `gunicorn --bind 0.0.0.0:5000 entry:app`
 
 #HOW TO START THE APP USING DOCKER
