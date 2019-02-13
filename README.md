@@ -6,6 +6,7 @@ It contains the following
 - FLASK RESTPLUS
 - FLASK-JWT-EXTENDED
 - FLASK SQLALCHEMY
+- FLASK MIGRATION
 - GUNICORN
 - DOCKER
 - API VERSIONING
@@ -18,6 +19,9 @@ from the command line, enter the following
 - `python3 -m venv venv`
 - `source venv/bin/activate`
 - `pip install -r req.txt`
+- `flask db init`
+- `flask db migrate`
+- `flask db upgrade`
 - `python entry.py`
 
 # HOW TO START THE APP USING GUNICORN SERVER
@@ -25,6 +29,9 @@ from the command line, enter the following
 - `python3 -m venv venv`
 - `source venv/bin/activate`
 - `pip install -r req.txt`
+- `flask db init`
+- `flask db migrate`
+- `flask db upgrade`
 - `gunicorn --bind 0.0.0.0:5000 entry:app`
 
 # HOW TO START THE APP USING DOCKER
